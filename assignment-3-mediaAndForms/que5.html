@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="aiewport" content="width=deaice-width, initial-scale=1.0">
+    <title>Quetion 5</title>
+</head>
+
+<body>
+    <!-- Create a sign-up and sign-in form with proper validations
+(a) Sign up form should have a first name last name email password confirm password age gender 
+and agree to terms and conditions fields at minimum You can add and other if you like.
+(b) Sign in form should have email password field -->
+
+    <div style="border: 1px solid black;display: inline-block;padding: 10px;">
+        <h1>Sign Up Form</h1>
+        <form action="#">
+            <label for="fname">First Name:
+                <input type="text" id="fname" placeholder="Please enter your first name" name="fname" minlength="3"
+                    maxlength="15" required>
+            </label><br>
+            <label for="lname">Last Name:
+                <input type="text" id="lname" placeholder="Please enter your last name" name="lname" minlength="3"
+                    maxlength="15" required>
+            </label><br>
+            <label for="email">Email:
+                <input type="email" id="email" placeholder="Please enter your email" name="email" maxlength="30"
+                    required>
+            </label><br>
+            <label for="password">Password:
+                <input type="password" id="password" placeholder="Please enter your password" name="password"
+                    maxlength="8" required>
+            </label><br>
+            <label for="cpassword">Confirm Password:
+                <input type="cpassword" id="cpassword" placeholder="Please enter your password" name="cpassword"
+                    maxlength="8" required>
+            </label><br>
+            <label for="age">Age:
+                <input type="number" id="age" placeholder="Please enter your age" name="age" min="0" max="70" required>
+            </label><br>
+            <label for="gender">Gender:
+                <input type="radio" name="gender" id="gender" value="male" checked><label for="male">Male</label>
+                <input type="radio" name="gender" id="gender" value="female"><label for="female">Female</label>
+            </label><br>
+            <label for="remember">
+                <input type="checkbox" name="remember" id="remember" checked required>Agree to Terms and Conditions
+            </label><br>
+            <button type="button" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+        </form>
+    </div>
+
+    <!-- Signin Form -->
+    <div style="border: 1px solid black;display: inline-block;padding: 10px;">
+        <h1>Signin Form</h1>
+        <form action="#">
+            <label for="email">Email:
+                <input type="email" id="email" placeholder="Please enter your email" name="email" maxlength="30"
+                    required>
+            </label><br>
+            <label for="password">Password:
+                <input type="password" id="password" placeholder="Please enter your password" name="password"
+                    maxlength="8" required>
+            </label><br>
+            <button type="submit" class="signupbtn">Sign In</button>
+        </form>
+    </div>
+</body>
+
+</html>
