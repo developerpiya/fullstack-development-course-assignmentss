@@ -1,0 +1,4 @@
+que: what is SEO and explain the importance of seo?
+
+ans: SEO stands for search engine optimization—the practice of increasing the quantity and quality of traffic to your website through organic search engine results.
+The ultimate goal of SEO for business is to generate organic traffic—searchers clicking through to your website from a search engine results page (SERP).
