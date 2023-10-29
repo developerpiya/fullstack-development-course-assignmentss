@@ -1,0 +1,9 @@
+.external_style{
+    background-color: aliceblue;
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+}
+.inline_internal_external{
+    color: green;
+}

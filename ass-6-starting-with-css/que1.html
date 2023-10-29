@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <link rel="stylesheet" href="que1.css">
+    <style>
+        /* style for internal css */
+        .internal_style{
+            background-color: gainsboro;
+            color: brown;
+            font-size: large;
+            font-weight: 500;
+        }
+        /* style for internal external inline css */
+        .inline_internal_external{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- create a simple web pages with  some div tags and show different ways to add css as well as what happens when you target  the some elements with inline internal nad external CSS. also utilize comments in the project where required? -->
+    <div>
+        <!-- here show the inline css -->
+        <p style="background-color: yellow; color: blue;font-size: 20px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, assumenda?</p>
+
+        <!-- here show the internal css -->
+        <p class="internal_style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, sunt.</p>
+
+        <!-- here show the external css -->
+        <p class="external_style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ea.</p>
+
+        <!-- target same element with inline,internal and external css -->
+        <!-- when we apply all css methods then inline css have high priority  -->
+
+        <p class="inline_internal_external" style="color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit beatae et saepe corporis sit voluptas vel iure voluptate nisi voluptates.</p>
+    </div>
+</body>
+</html>
