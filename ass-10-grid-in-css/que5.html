@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+    <style>
+        /* justify-items : Align each grid item at the right of their grid cell, in the inline direction: */
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            width: 400px;
+            height: 400px;
+            justify-items: end;
+            border: 1px solid #000;
+        }
+        .container div{
+            width: 100px;
+            height: 100px;
+        }
+        .red{ 
+            background-color: red;
+            justify-self: center;
+            border: 1px solid black;
+        }
+        /* Align a grid item at the left side of its grid cell: */
+        .blue{
+            background-color: blue;
+            justify-self: left;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .green{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red">RED</div>
+        <div class="blue">BLUE</div>
+        <div class="yellow">YELLOW</div>
+        <div class="green">GREEN</div>
+    </div>
+</body>
+</html>
