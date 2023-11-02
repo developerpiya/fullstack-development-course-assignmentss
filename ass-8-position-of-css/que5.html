@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main-div {
+            position: relative;
+        }
+
+        .img-div {
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .img-div img {
+            width: 230vh;
+            height: 100vh;
+        }
+        .para-div p{
+            font-weight: bold;
+        }
+        .para-div{
+            text-align: center;
+            position: absolute;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Explain the Z-Index with code example ? -->
+    <div class="main-div">
+        <div class="para-div">
+            <h1>Z-Index</h1>
+            <p>The z-index property specifies the stack order of an element. An element with greater stack order is
+                always in front of an element with a lower stack order.</p>
+            <p>z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or
+                position: sticky) and flex items (elements that are direct children of display:flex elements).</p>
+            <p> If two positioned elements overlap without a z-index specified, the element positioned last in the HTML
+                code will be shown on top. </p>
+        </div>
+
+        <div class="img-div">
+            <img src="https://www.banglanews24.com/public/uploads/2023/10/30/1698677937.west-bank.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+<body>
+    <h2>Difference between relative and absolute position</h2>
+    <table border="1">
+        
+        <tr>
+            <th>Relative</th>
+            <th>Absolute</th>
+        </tr>
+        <tr>
+            <td>Relative positioning allows you to specify the position of an element relative to its normal position in the document flow.</td>
+            <td>
+                Absolute positioning allows you to specify the exact position of an element relative to its nearest positioned ancestor.
+            </td>
+        </tr>
+        <tr>
+            <td>When an element is set to relative position, it retains its space in the normal document flow, meaning it can affect the layout of other elements, just like it would if it were not relatively positioned.</td>
+            <td>When an element is set to absolute position, it is taken out of the normal flow of the document, meaning it doesn't affect the layout of other elements. Other elements act as if the absolutely positioned element doesn't exist.</td>
+        </tr>
+        <tr>
+            <td>You can adjust the position of a relatively positioned element by using the top, right, bottom, or left properties. These values are measured relative to the element's normal position in the document flow.</td>
+            <td>The position of the element is determined by setting values for the top, right, bottom, or left properties. These values are measured in relation to the nearest positioned ancestor (an element with a position property other than "static") or the initial containing block (usually the viewport).</td>
+        </tr>
+        <tr>
+            <td>Relative positioning is often used to fine-tune the placement of elements without disrupting the layout, for example, to create spacing or overlapping effects.</td>
+            <td>Absolute positioning is often used for elements like tooltips, pop-up menus, or elements that need to be precisely positioned on a page.</td>
+        </tr>
+    </table>
+</body>
+</html>

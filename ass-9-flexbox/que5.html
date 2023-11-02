@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    </style>
+
+    <title>Question 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .main-box {
+            display: flex;
+            margin: auto;
+            width: 100%;
+        }
+
+        .left-box,
+        .right-box {
+            flex: 1;
+        }
+
+        .right-box {
+            width: 50%;
+        }
+
+        .right-box img {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .left-box {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            padding: 30px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logos-left {
+            display: flex;
+            gap: 20px;
+        }
+
+        .logos-left img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .links-right ul {
+            list-style: none;
+            display: flex;
+
+            gap: 20px;
+        }
+
+        .links-right ul li {
+            display: inline-block;
+
+        }
+
+        .links-right button {
+            margin-top: 10px;
+            padding: 4px 8px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            border-radius: 3px;
+        }
+
+        .links-right .active {
+            background-color: orange;
+            color: #fff;
+        }
+
+        .headings {
+            margin: 50px 0px 20px 0px;
+
+        }
+
+        .headings h1 {
+            margin-bottom: 10px;
+        }
+        .buttons ul{
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            /* justify-content: center; */
+            align-items: center;
+             margin-bottom: 30px;
+        }
+        .buttons img{
+            width: 20px;
+            height: 20px;
+        }
+        .buttons .btn{
+            
+            background-color: #fff;
+            color:rgb(8, 8, 90);
+            padding: 3px 5px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-weight: bold;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .buttons .btn-1{
+            background-color: rgb(8, 8, 90);
+            color: #fff; 
+
+        }
+        .choose-train{
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: space-around;
+           margin-bottom: 10px;
+            padding: 10px 0px 10px 0px;
+            border-radius: 5px;
+            align-items: center;
+            line-height: 1.2;
+        }
+        .choose-train h1{
+            font-size: 15px;
+        }
+        .choose-train p{
+            font-size: 12px;
+        }
+        .choose-train small{
+            font-size: 10px;
+        }
+        .choose-from{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .choose-from p{
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        
+        .search-btn button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(11, 148, 11);
+            color: #fff;
+            gap: 6px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px 10px 20px;
+            width: 100%;
+            margin-top: 30px;
+        }
+        .search-btn img{
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- upper section -->
+        <div class="main-box">
+            <div class="left-box">
+                <nav>
+                    <div class="logos-left">
+                        <img src="images/indianRailwaysLogo.png" alt="">
+                        <img src="images/IRCTCLogo.png" alt="">
+                    </div>
+                    <div class="links-right">
+                        <ul>
+                            <li>Ask Disha</li>
+                            <li>Contact us</li>
+                            <li>Alerts</li>
+                        </ul>
+                        <ul>
+                            <li><button class="active">Login</button></li>
+                            <li><button>Register</button></li>
+                            <li><button>Agent Login</button></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- heading section -->
+                <section class="headings">
+                    <h1>Indian Railways</h1>
+                    <span style="color: rgb(33, 162, 33);">Safety</span>
+                    <span style="color: orange;">Security</span>
+                    <span style="color: rgb(8, 8, 90);">Punctuality</span>
+                </section>
+
+                <!-- button section -->
+                <section class="buttons">
+                    <ul>
+                        <li><button class="btn btn-1"><img src="images/ticket_icon.png" alt=""><span>Book Ticket</span></button></li>
+                        <li><button class="btn"><img src="images/tick_icon.png" alt=""><span>PNR Status</span></button></li>
+                        <li><button class="btn"><img src="images/chart_icon.png" alt=""><span>Charts/ Vacancy</span></button></li>
+                    </ul>
+                </section>
+
+                <!-- choose train section -->
+                <section class="choose-train">
+                    <div class="choose-from">
+                        <div>
+                            <img src="images/departure_train_icon.png" alt="">
+                        </div>
+                        <div>
+                            <p><span>From</span><img src="images/expand_more_icon.png" alt=""></p>
+                            <h1>Banglore</h1>
+                            <small>KSR - Banglore</small>
+                        </div>
+                    </div>
+
+                    <div class="choose-arrow">
+                        <img src="images/to_from_arrow.png" alt="">
+                    </div>
+
+                    <div class="choose-from">
+                        <div>
+                            <img src="images/departure_train_icon.png" alt="">
+                        </div>
+                        <div>
+                            <p><span>To</span><img src="images/expand_more_icon.png" alt=""></p>
+                            <h1>Kasaragod</h1>
+                            <small>KSD - Kasaragod</small>
+                        </div>
+                    </div>
+                </section>
+
+                 <!-- choose train section second -->
+                 <section class="choose-train">
+                    <div class="choose-from">
+                        <div>
+                            <img src="images/calander-icon.png" alt="">
+                        </div>
+                        <div>
+                            <p><span>Date</span><img src="images/expand_more_icon.png" alt=""></p>
+                            <h1>01 Aug 23</h1>
+                            <small>Tuesday</small>
+                        </div>
+                    </div>
+
+                    <div class="choose-from">
+                        <div>
+                            <img src="images/threedot-icon.png" alt="">
+                        </div>
+                        <div>
+                            <p><span>Class</span><img src="images/expand_more_icon.png" alt=""></p>
+                            <h1>3 A</h1>
+                            <small>AC 3 tier</small>
+                        </div>
+                    </div>
+
+                    <div class="choose-from">
+                        <div>
+                            <img src="images/chart_icon.png" alt="">
+                        </div>
+                        <div>
+                            <p><span>Seat Type</span><img src="images/expand_more_icon.png" alt=""></p>
+                            <h1>TATKAL</h1>
+                            <small>AC 3 tier</small>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- serch button -->
+                <div class="search-btn">
+                    <button>
+                        <span>Search Train </span>
+                        <img src="images/right-arrow-icon.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+            
+            <!-- Right side section -->
+            <div class="right-box">
+                <div class="right-img">
+                    <img src="images/heroImage.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
