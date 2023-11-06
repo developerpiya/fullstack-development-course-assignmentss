@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+    <style>
+        .container{
+            display: grid;
+            width: 100%;
+           gap: 20px;
+           grid-template-columns: repeat(3,1fr);
+           /* grid-template-rows: auto auto; */
+           justify-content: center;
+        }
+
+        .box{
+            width:400px;
+            height: 200px;
+            color: white;
+            text-align: center;
+        }
+        .red-box{
+            background-color: red;
+        }
+        .green-box{
+            background-color: green;
+        }
+        .blue-box{
+            background-color: blue;
+        }
+        .brown-box{
+            background-color: brown;
+        }
+        @media (max-width:500px){
+            .container{
+                grid-template-columns: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="box red-box">Red Box</div>
+       <div class="box green-box">Green Box</div>
+       <div class="box blue-box">Blue Box</div>
+       <div class="box brown-box">Brown Box</div>
+    </div>
+</body>
+</html>
