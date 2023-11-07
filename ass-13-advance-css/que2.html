@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #example-element {
+            margin: 50px;
+            width: 100px;
+            height: 100px;
+            transform-style: preserve-3d;
+            transform: rotate3d(1, 1, 1, 90deg);
+        }
+
+        .face {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: inherit;
+            font-size: 15px;
+            color: #000;
+        }
+
+        .front {
+            background: rgb(100, 100, 241);
+            transform: translateZ(50px);
+        }
+
+        .back {
+            background: rgb(100, 100, 241);
+            transform: rotateY(180deg) translateZ(50px);
+        }
+
+        .right {
+            background: rgb(100, 100, 241);
+            transform: rotateY(90deg) translateZ(50px);
+        }
+
+        .left {
+            background: rgb(100, 100, 241);
+            transform: rotateY(-90deg) translateZ(50px);
+        }
+
+        .top {
+            background: rgb(100, 100, 241);
+            transform: rotateX(90deg) translateZ(50px);
+        }
+
+        .bottom {
+            bbackground: rgb(100, 100, 241);
+            transform: rotateX(-90deg) translateZ(50px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- create a 3d cube using a transformation of css -->
+    <section id="example-element">
+        <div class="face front">Front</div>
+        <div class="face back">Back</div>
+        <div class="face right">RIght</div>
+        <div class="face left">Left</div>
+        <div class="face top">Top</div>
+        <div class="face bottom">Bottom</div>
+    </section>
+</body>
+
+</html>
