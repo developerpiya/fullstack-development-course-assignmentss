@@ -1,0 +1,13 @@
+Que-2 : Explain the Git workflow, including the staging area, working directory and repository ?
+
+Ans : Firstly untracked files live in working area here we use command git status
+(1) working area : git status (this command is used to check the working area status)
+(2) staging area : git add (this command is used add the files in staging area)
+(3) Repository : git commit (this command is used to  )
+
+(1) working Area ---> The Working Tree is the area where you are currently working. Here We see the changes or files using the command "git status"
+
+(2) Staging Area ---> The Staging Area is when git starts tracking and saving changes that occur in files. These saved changes reflect in the .git directory. That is about it when it comes to the Staging Area. You tell git that I want to track these specific files, then git says okay and moves them from you Working Tree to the Staging Area. Here We can see what is in your staging area "git add"
+
+(3) The Local Repository --->The Local Repository is everything in your .git directory. Mainly what you will see in your Local Repository are all of your checkpoints or commits. It is the area that saves everything .
+Here We add items from staging area to local repository using the command "git commit" 

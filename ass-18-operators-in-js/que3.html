@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+<body>
+    <h3>Difference between unary, binary and ternary operators example of each ?</h3>
+    <h4>Unary Operator : In which operation perform only one operand</h4>
+    <p id="unary_ex"></p>
+    <script>
+        let val = 5;
+        document.getElementById('unary_ex').innerHTML = ++val;
+    </script>
+
+<h4>Binary Operator : In which operation perform only two operand</h4>
+<p id="unary_ex1"></p>
+<script>
+    let val1 = 5;
+    let val2 = 6;
+    let val3 = val1 + val2;
+    document.getElementById('unary_ex1').innerHTML = val3;
+</script>
+
+<h4>Ternary Operator : In which operation perform only three operand</h4>
+    <p id="unary_ex2"></p>
+    <script>
+        let v = 7;
+        v == 5 ?document.getElementById('unary_ex2').innerHTML = v : document.getElementById('unary_ex2').innerHTML = 'not matched';
+        
+    </script>
+</body>
+</html>

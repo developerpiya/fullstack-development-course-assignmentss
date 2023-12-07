@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+<body>
+    <h3>Describe the categrization of operator in js based on their functionality. provide example for each category?</h3>
+    <ul>
+        <li>Arithmetic operators</li>
+        <li>Assignment operators</li>
+        <li>Bit wise operator</li>
+        <li>Comparision operator</li>
+        <li>logical operator</li>
+        <li>Ternory operator</li>
+        <li>typeof operator</li>
+    </ul>
+    <h3>(1) Arithmetic operator</h3>
+    <p id="arith_result"></p>
+    <script>
+        let num1 = 10;
+        let num2 = 20;
+        let mult = num1 * num2;
+        document.getElementById('result').innerHTML = `Number1 multiply with number2 is: ${mult}`;
+    </script>
+
+<h3>(2) Assignment operator</h3>
+<p id="arith_result"></p>
+<script>
+    let a=10
+    let b=a
+    document.getElementById('result').innerHTML = a;
+</script>
+
+<h3>
+    (3) Bitwise operators</h3>
+    <p id="bit_result"></p>
+    <script>
+        let ope1 =2;
+        document.getElementById('bit_result').innerHTML = `And Gate - ${ope1 &= 2} <br> OR Gate ${ope1 ^= 2} <br> XOR Gate ${ope1 ^= 2}`;
+    </script>
+
+<h3>(4) Comparision operator</h3>
+<p id="comp_result"></p>
+<script>
+    ope2 = 10;
+    if(ope2 == 8){
+        document.getElementById('comp_result').innerHTML = 'result matched.'
+    }else{
+        document.getElementById('comp_result').innerHTML = 'result not matched.'
+
+    }
+</script>
+
+<h3>(5) Logical operator</h3>
+<p id="log_result"></p>
+<script>
+    let ope3 = 8;
+     if(ope3 == 8 || ope3 == 10){
+        document.getElementById('log_result').innerHTML = 'result matched.'
+    }else{
+        document.getElementById('log_result').innerHTML = 'result not matched.'
+
+    }
+</script>
+
+<h3>(6) Ternary operator</h3>
+<p id="ter_result"></p>
+<script>
+    let ope = 5;
+    let x = document.getElementById('ter_result');
+    ope == 6 ? x.innerHTML = ('value is 6') : x.innerHTML = ('value is 8');
+</script>
+
+<h3>Typeof operator</h3>
+<p id="result1"></p>
+<script>
+    let y = 'piya';
+    document.getElementById('result1').innerHTML = `${typeof(y)}`;
+</script>
+</body>
+</html>

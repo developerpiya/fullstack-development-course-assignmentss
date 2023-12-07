@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Que :- Explain the usage of ternary operator with syntax and write a program to check wheather the number is even or
+    odd using the ternary operator ?
+
+    Ans : => The ternnory operator is a conditional operator which tells us that condition is true or false
+
+    <h3>pls check number is Even or odd</h3>
+    <input type="number" placeholder="pls enter a number" id="num">
+    <button id="btn">click</button>
+    <script>
+        document.getElementById('btn').addEventListener('click',() => {
+            var num = document.getElementById('num').value;
+            console.log(num)
+            num % 2 == 0 ? document.write('Number is Even', num) : document.write('Number is odd', num);
+        })
+    </script>
+</body>
+
+</html>

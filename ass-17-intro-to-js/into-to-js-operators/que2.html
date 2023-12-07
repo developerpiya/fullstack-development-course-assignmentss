@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Que2 : Describe the categorization of operators in JS . based on their functionality. provide examples of each
+        category ? </h1>
+    <p>Ans : There are five types of operators in JS
+        (1) : Airthmetic operator
+        (2) : Assignment operator
+        (3) : Logical Operator
+        (4) : Comparision operator
+        (5) : Bitwise operator
+    </p>
+    <ul>
+        <li>
+            <p>(1) Airthmetic Operators -> Here we use +,-,*,/,++,--,%</p>
+            <script>
+                var a = 10;
+                var b = 4;
+                console.log(a + b);
+                console.log(a - b);
+                console.log(a * b);
+                console.log(a / b);
+                console.log(a % b);
+                console.log(a--);
+                console.log(a++);
+            </script>
+        </li>
+        <li>
+            <p>(2) Assignment Operators -> Here we use +=,-=,*=,/=</p>
+            <script>
+                console.log(a += b);
+                console.log(a -= b);
+                console.log(a *= b);
+            </script>
+        </li>
+        <li>
+            <p>(3) comparison Operators -> Here we use ==, <=,>=, != </p>
+            <script>
+                if (a >= b) {
+                    console.log('a is bigger in comparision', a)
+                } else {
+                    console.log('b is bigger in comparision', b)
+                }
+            </script>
+        </li>
+        <li>
+            <p>(4) logical Operators -> Here we use &&, ||, !</p>
+            <script>
+                if (a >= b || a == b) {
+                    console.log('a is bigger in comparision', a)
+                } else {
+                    console.log('b is bigger in comparision', b)
+                }
+            </script>
+        </li>
+        <li>
+            <p>
+                (5) Bitwise operator -> &,|,~(not),^(X-OR),<<(left shift),(right shift) </p>
+                    <script>
+                        console.log(a & b);
+                        console.log(a | b);
+                        console.log(a ^ b);
+                        console.log(~b);
+                        console.log(a << b);
+                        console.log(a >> b);
+                    </script>
+        </li>
+    </ul>
+</body>
+
+</html>

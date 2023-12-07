@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+    <style>
+        form {
+            background-color: coral;
+            margin: auto;
+            /* height: 200px; */
+            padding: 60px;
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        label,
+        input {
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 20px;
+            background-color: green;
+            border: 2px solid #fff;
+            color: #fff;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h4> Write the js program that calculates the simple intrest using simple intrent = principle * rate * time/ 100
+    </h4>
+    <form action="return false" >
+        <label for="principle">Please Enter the principle value : </label>
+        <input type="number" name="principle" id="principle" /><br>
+        <label for="rate">Please Enter the rate value : </label>
+        <input type="number" name="rate" id="rate" /><br>
+        <label for="time">Please Enter the time value : </label>
+        <input type="number" name="time" id="time" /><br>
+        <p id="result"></p>
+        <button id="getResult">submit</button>
+    </form>
+    <script>
+        let p = document.getElementById('principle').value;
+        let r = document.getElementById('rate').value;
+        let t = document.getElementById('time').value;
+        
+        document.getElementById('getResult').onclick(()=>{
+            let si = (p * r * t)/100;
+            document.getElementById('result').innerHTML = si;
+        })
+    </script>
+</body>
+
+</html>

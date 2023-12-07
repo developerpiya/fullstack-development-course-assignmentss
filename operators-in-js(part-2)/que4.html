@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Use a ternary operator to check that a person is eligible to vote or not by checking his age. If the age of person less then "You can not vote" should be logged else "You can vote" should be logged.
+
+    <h3>pls check person is eligible for voting or nor ?</h3>
+    <input type="number" placeholder="pls enter your age " id="age">
+    <button id="btn">click</button>
+    <script>
+        document.getElementById('btn').addEventListener('click',() => {
+            var age = document.getElementById('age').value;
+            age > 18 ? document.write('You can Vote. Your age is', age) : document.write('You can not Vote due to your age is', age);
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Use a nested ternary operator to check that a number is positive, negative or zero .You have to print "positive" . If the number is positive and similar for negative and zero.
+    
+    <h3>pls check number is positive negative or zero</h3>
+    <input type="number" placeholder="pls enter a number" id="num">
+    <button id="btn">click</button>
+    <script>
+        document.getElementById('btn').addEventListener('click',() => {
+            var num = document.getElementById('num').value;
+            console.log(num)
+            num > 0 ? document.write('Number is Positive ', num) : num<0 ? document.write('Number is Negative ', num): document.write('Number is Zero ',num);
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+Que-3 : What is .gitignore is and why is important in version control system ? 
+
+Ans : .gitignore is a file where we save the files name . Those main files name which have important info or API_KEY or any other KEY thats we don't want to share others .

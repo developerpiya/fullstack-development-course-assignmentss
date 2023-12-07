@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Explain the importance of choosing meaningful and descriptive variable in JS. provide an example where we using clear identifier improves code readability</h1>
+
+    <form action="">
+        <label for="name">Name :</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email">
+
+        <label for="age"></label>
+        <input type="number" name="age" id="age">
+    </form>
+
+    <script>
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var age = document.getElementById('age').value;
+        document.write(`My name is ${name}, my email is ${email} and I am ${age} old`);
+    </script>
+</body>
+</html>

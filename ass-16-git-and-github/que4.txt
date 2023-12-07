@@ -1,0 +1,4 @@
+Que-4 : Brief Explain What github is and how it facilitates colloboration and version control also name some alternatives of github ?
+Ans: GitHub is a code hosting platform for version control and collaboration. it provides colloboration environment which means is that here multiple persons work on a code . one person make separate branch and work on it and other person do it same and after it merge all the branches or use pull method. 
+
+Other alternative of github is ---- BitBucket , Azure DevOps Server.

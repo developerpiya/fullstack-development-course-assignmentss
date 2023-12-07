@@ -1,0 +1,3 @@
+
+Que-6 : Deploy Tailwind Projects named Youtube, slack and gmail clones on github pages and share the deployed link of those three. Expected output- Live hostedURL-Link of your deployed respective website with github pages ? 
+Ans : https://doremon-frontend-react.vercel.app/

@@ -1,0 +1,7 @@
+Que-5 : Describe the process of contributing to any open source project on github in a step-by-step manner ?
+Ans:
+(1) Discovering relevant projects.
+(2) Finding good first issues.
+(3) Opening an issue.
+(4) Validating an issue or pull request.
+(5) Further reading

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>What is the purpose of declaring variables in js, and how do you declare them using the let keyword ?</h1>
+    We use the variable for scope definig in which we use three types variables
+    (1) var (globle scope)
+    (2) let (block scope)
+    (3) const (contant variable)
+
+    <script>
+        var a = 3;
+        const c = 6;
+        if (a) {
+            let b = 4;
+            console.log(b)
+            console.log(a)
+        }
+        console.log(b);//Here give the console error bcz b value not found out of scope
+        c = 8;
+        console.log(c);//Here give the console error bcz can't change the value of constant variable.
+    </script>
+</body>
+
+</html>
